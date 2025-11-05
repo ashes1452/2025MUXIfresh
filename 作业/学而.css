@@ -21,10 +21,16 @@ body {
 
 
 .part2 {
-    color: red;
-    border-top: solid red;
     text-align: center;
-    top: 0;
+    border-top: solid red;
+    height: 40px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.part2-1 {
+    color: red;
 }
 
 .part4 {
@@ -102,6 +108,7 @@ body {
     clip-path: circle(50%);
     background-color: white;
     position: relative;
+    transition: 0.3s ease;
 }
 
 
@@ -115,6 +122,7 @@ body {
     clip-path: circle(50%);
     background-color: white;
     position: relative;
+    transition: 0.3s ease;
 }
 
 .cg1-3 {
@@ -125,6 +133,7 @@ body {
     clip-path: circle(50%);
     background-color: white;
     position: relative;
+    transition: 0.3s ease;
 }
 
 .cg1-4 {
@@ -135,6 +144,23 @@ body {
     clip-path: circle(50%);
     background-color: white;
     position: relative;
+    transition: 0.3s ease;
+}
+
+.cg1-1:hover {
+    background-color: rgb(7, 150, 81);
+}
+
+.cg1-2:hover {
+    background-color: rgb(7, 150, 81);
+}
+
+.cg1-3:hover {
+    background-color: rgb(7, 150, 81);
+}
+
+.cg1-4:hover {
+    background-color: rgb(7, 150, 81);
 }
 
 .cg1-1-1 {
@@ -143,6 +169,7 @@ body {
     left: 30%;
     font-size: 30px;
     color: rgb(7, 150, 81);
+    transition: 0.3s ease;
 }
 
 .cg1-1-2 {
@@ -151,6 +178,7 @@ body {
     left: 30%;
     font-size: 30px;
     color: rgb(7, 150, 81);
+    transition: 0.3s ease;
 }
 
 .cg1-1-3 {
@@ -159,6 +187,7 @@ body {
     left: 30%;
     font-size: 30px;
     color: rgb(7, 150, 81);
+    transition: 0.3s ease;
 }
 
 .cg1-1-4 {
@@ -167,6 +196,23 @@ body {
     left: 30%;
     font-size: 30px;
     color: rgb(7, 150, 81);
+    transition: 0.3s ease;
+}
+
+.cg1-1-1:hover {
+    color: white;
+}
+
+.cg1-1-2:hover {
+    color: white;
+}
+
+.cg1-1-3:hover {
+    color: white;
+}
+
+.cg1-1-4:hover {
+    color: white;
 }
 
 .cg2 {
@@ -200,15 +246,15 @@ body {
 .specialwriting {
     font-size: small;
     color: grey;
+    transition: 0.3s ease;
 }
 
-.specialwriting1 {
+.specialwriting:hover {
     color: red;
 }
 
-.specialwriting2 {
+.specialwriting1:hover {
     color: red;
-    font-size: small;
 }
 
 .cg3 {
@@ -292,13 +338,17 @@ td {
     text-decoration: underline;
 }
 
-.specialtd {
-    color: white;
-    background-color: rgb(7, 150, 81);
-}
 
 .special {
     border: 1px solid rgb(7, 150, 81);
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.special:hover {
+    background-color: rgb(7, 150, 81);
+    color: white;
 }
 
 .item3 {
@@ -310,7 +360,6 @@ td {
     height: 300px;
     margin-top: 20px;
     padding-top: 25px;
-
 }
 
 .writing {
@@ -324,6 +373,7 @@ td {
     margin-top: 80px;
     gap: 10px;
     padding-bottom: 80px;
+    z-index: 3;
 }
 
 .block1 {
@@ -339,13 +389,12 @@ td {
 
 .block2 {
     width: 150px;
-    height: 120px;
-    display: flex;
-    flex-direction: column;
 }
 
 .block2-1 {
     width: 150px;
+    position: absolute;
+    z-index: -1;
 }
 
 .block2-2 {
@@ -353,11 +402,55 @@ td {
     text-align: center;
     width: 150px;
     height: 80px;
-    background-color: rgb(232, 26, 26);
+    background-color: rgb(237, 65, 65);
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1;
 }
+
+
+
+.block1:hover {
+    background-color: rgb(232, 26, 26);
+    transition: 0.3s ease;
+}
+
+.block2-2:hover {
+    background-color: rgb(232, 26, 26);
+    transition: 0.3s ease;
+}
+
+.block3:hover {
+    background-color: rgb(232, 26, 26);
+    transition: 0.3s ease;
+}
+
+.block4:hover {
+    background-color: rgb(232, 26, 26);
+    transition: 0.3s ease;
+}
+
+.block1:hover>.block2-1 {
+    transform: translate(0, -62px);
+    transition: all 0.5s ease;
+}
+
+.block2:hover>.block2-1 {
+    transform: translate(0, -42px);
+    transition: all 0.5s ease;
+}
+
+.block3:hover>.block2-1 {
+    transform: translate(0, -62px);
+    transition: all 0.5s ease;
+}
+
+.block4:hover>.block2-1 {
+    transform: translate(0, -62px);
+    transition: all 0.5s ease;
+}
+
 
 .block3 {
     width: 150px;

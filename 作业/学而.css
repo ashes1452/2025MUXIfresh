@@ -1,0 +1,420 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+.headline {
+    background-color: white;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    top: 0;
+}
+
+
+.part2 {
+    color: red;
+    border-top: solid red;
+    text-align: center;
+    top: 0;
+}
+
+.part4 {
+    border: red;
+    background: none;
+    outline: none;
+    list-style: none;
+    height: 25px;
+}
+
+.searchbtn {
+    float: right
+}
+
+.part56 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.part6 {
+    background-color: rgb(7, 150, 81);
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    width: 80px;
+    height: 25px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.item1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.category {
+    width: 700px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+}
+
+.cg1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 80px;
+    padding-top: 20px;
+}
+
+.cg1-1 {
+    width: 75px;
+    height: 75px;
+    border: 1px solid rgb(7, 150, 81);
+    border-radius: 50%;
+    clip-path: circle(50%);
+    background-color: white;
+    position: relative;
+}
+
+
+
+
+.cg1-2 {
+    width: 75px;
+    height: 75px;
+    border: 1px solid rgb(7, 150, 81);
+    border-radius: 50%;
+    clip-path: circle(50%);
+    background-color: white;
+    position: relative;
+}
+
+.cg1-3 {
+    width: 75px;
+    height: 75px;
+    border: 1px solid rgb(7, 150, 81);
+    border-radius: 50%;
+    clip-path: circle(50%);
+    background-color: white;
+    position: relative;
+}
+
+.cg1-4 {
+    width: 75px;
+    height: 75px;
+    border: 1px solid rgb(7, 150, 81);
+    border-radius: 50%;
+    clip-path: circle(50%);
+    background-color: white;
+    position: relative;
+}
+
+.cg1-1-1 {
+    position: relative;
+    top: 30%;
+    left: 30%;
+    font-size: 30px;
+    color: rgb(7, 150, 81);
+}
+
+.cg1-1-2 {
+    position: relative;
+    top: 30%;
+    left: 30%;
+    font-size: 30px;
+    color: rgb(7, 150, 81);
+}
+
+.cg1-1-3 {
+    position: relative;
+    top: 30%;
+    left: 30%;
+    font-size: 30px;
+    color: rgb(7, 150, 81);
+}
+
+.cg1-1-4 {
+    position: relative;
+    top: 30%;
+    left: 30%;
+    font-size: 30px;
+    color: rgb(7, 150, 81);
+}
+
+.cg2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 38px;
+    padding-top: 10px;
+}
+
+.cg2-1 {
+    padding-top: 20px;
+    line-height: 12px;
+}
+
+.cg2-2 {
+    line-height: 12px;
+    padding-top: 20px;
+}
+
+.cg2-3 {
+    line-height: 12px;
+    padding-top: 20px;
+}
+
+.cg2-4 {
+    line-height: 12px;
+    padding-top: 20px;
+}
+
+.specialwriting {
+    font-size: small;
+    color: grey;
+}
+
+.specialwriting1 {
+    color: red;
+}
+
+.specialwriting2 {
+    color: red;
+    font-size: small;
+}
+
+.cg3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 135px;
+    padding-top: 20px;
+}
+
+.cg3-1 {
+    width: 20px;
+    height: 20px;
+    clip-path: circle(50%);
+    border: 1px solid rgb(7, 150, 81);
+    border-radius: 50%;
+}
+
+.cg3-2 {
+    width: 20px;
+    height: 20px;
+    clip-path: circle(50%);
+    border: 1px solid rgb(7, 150, 81);
+    border-radius: 50%;
+}
+
+.cg3-3 {
+    width: 20px;
+    height: 20px;
+    clip-path: circle(50%);
+    border: 1px solid rgb(7, 150, 81);
+    border-radius: 50%;
+}
+
+.cg3-4 {
+    width: 20px;
+    height: 20px;
+    clip-path: circle(50%);
+    border: 1px solid rgb(7, 150, 81);
+    border-radius: 50%;
+}
+
+.item2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    width: 700px;
+    height: 300px;
+    margin-top: 20px;
+    padding-top: 25px;
+}
+
+.h5writing {
+    color: rgb(7, 150, 81);
+    margin-top: 5px;
+}
+
+table {
+    margin-top: 15px;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+tr {
+    width: auto;
+    height: 45px;
+    padding: 8px;
+}
+
+td {
+    width: 110px;
+    height: auto;
+    padding: 8px;
+
+}
+
+.specialnumber {
+    font-size: 50px;
+    color: red;
+    text-decoration: underline;
+}
+
+.specialtd {
+    color: white;
+    background-color: rgb(7, 150, 81);
+}
+
+.special {
+    border: 1px solid rgb(7, 150, 81);
+}
+
+.item3 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    width: 700px;
+    height: 300px;
+    margin-top: 20px;
+    padding-top: 25px;
+
+}
+
+.writing {
+    text-align: center;
+}
+
+.block {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin-top: 80px;
+    gap: 10px;
+    padding-bottom: 80px;
+}
+
+.block1 {
+    width: 150px;
+    height: 80px;
+    background-color: rgb(237, 65, 65);
+    text-align: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.block2 {
+    width: 150px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+}
+
+.block2-1 {
+    width: 150px;
+}
+
+.block2-2 {
+    color: white;
+    text-align: center;
+    width: 150px;
+    height: 80px;
+    background-color: rgb(232, 26, 26);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.block3 {
+    width: 150px;
+    height: 80px;
+    background-color: rgb(237, 65, 65);
+    text-align: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.block4 {
+    width: 150px;
+    height: 80px;
+    background-color: rgb(237, 65, 65);
+    text-align: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ending {
+    width: 100%;
+    height: 80px;
+    background-color: rgb(49, 49, 49);
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    margin-top: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.End {
+    width: fit-content;
+}
+
+.end {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.end1 {
+    color: white;
+}
+
+.end2 {
+    width: 2px;
+    height: 5px;
+    background-color: red;
+}
+
+.end3 {
+    color: white;
+}

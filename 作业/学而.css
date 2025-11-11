@@ -22,15 +22,48 @@ body {
 
 .part2 {
     text-align: center;
-    border-top: solid red;
+    border-top: solid white;
     height: 40px;
     display: flex;
     justify-items: center;
     align-items: center;
 }
 
-.part2-1 {
+.part2:hover {
+    border-top: solid red;
+    transition: all 0.3s ease;
+}
+
+.part2:hover>.part2-1 {
     color: red;
+    transition: all 0.3s ease;
+}
+
+.part2-1 {
+    color: black;
+}
+
+.part3 {
+    text-align: center;
+    border-top: solid white;
+    height: 40px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.part3:hover {
+    border-top: solid red;
+    transition: all 0.3s ease;
+}
+
+.part3:hover>.part3-1 {
+    color: red;
+    transition: all 0.3s ease;
+}
+
+.part3-1 {
+    color: black;
 }
 
 .part4 {
@@ -39,6 +72,12 @@ body {
     outline: none;
     list-style: none;
     height: 25px;
+}
+
+.searching {
+    outline: none;
+    border: solid rgb(244, 7, 7) 2.3px;
+    height: 22px;
 }
 
 .searchbtn {
@@ -55,6 +94,7 @@ body {
 .part6 {
     background-color: rgb(7, 150, 81);
     text-decoration: none;
+    list-style: none;
     color: white;
     font-weight: bolder;
     width: 80px;
@@ -163,13 +203,32 @@ body {
     background-color: rgb(7, 150, 81);
 }
 
+.cg1-1:hover>.cg1-1-1 {
+    color: white;
+    transition: 0.3s ease;
+}
+
+.cg1-2:hover>.cg1-1-2 {
+    color: white;
+    transition: 0.3s ease;
+}
+
+.cg1-3:hover>.cg1-1-3 {
+    color: white;
+    transition: 0.3s ease;
+}
+
+.cg1-4:hover>.cg1-1-4 {
+    color: white;
+    transition: 0.3s ease;
+}
+
 .cg1-1-1 {
     position: relative;
     top: 30%;
     left: 30%;
     font-size: 30px;
     color: rgb(7, 150, 81);
-    transition: 0.3s ease;
 }
 
 .cg1-1-2 {
@@ -178,7 +237,6 @@ body {
     left: 30%;
     font-size: 30px;
     color: rgb(7, 150, 81);
-    transition: 0.3s ease;
 }
 
 .cg1-1-3 {
@@ -187,7 +245,6 @@ body {
     left: 30%;
     font-size: 30px;
     color: rgb(7, 150, 81);
-    transition: 0.3s ease;
 }
 
 .cg1-1-4 {
@@ -196,23 +253,6 @@ body {
     left: 30%;
     font-size: 30px;
     color: rgb(7, 150, 81);
-    transition: 0.3s ease;
-}
-
-.cg1-1-1:hover {
-    color: white;
-}
-
-.cg1-1-2:hover {
-    color: white;
-}
-
-.cg1-1-3:hover {
-    color: white;
-}
-
-.cg1-1-4:hover {
-    color: white;
 }
 
 .cg2 {

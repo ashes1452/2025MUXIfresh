@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+    }
+
+    .box1 {
+        display: flex;
+        flex-wrap: wrap;
+        width: 300px;
+        margin: 20px;
+        padding: 20px;
+    }
+
+    .box2 {
+        display: flex;
+        flex-wrap: wrap;
+        width: 300px;
+        margin: 20px;
+        padding: 20px;
+        height: 1200px;
+    }
+
+    .box1 div {
+        width: 300px;
+        margin: 5px;
+        height: 200px;
+        border-radius: 10px;
+        background-color: green;
+    }
+
+    .box2 .content-wrapper div {
+        width: 300px;
+        margin: 5px;
+        height: 200px;
+        border-radius: 10px;
+        background-color: yellow;
+    }
+</style>
+
+
+<body>
+    <div class="box1">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+
+    </div>
+    <div class="box2">
+        <div class="content-wrapper">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+        </div>
+    </div>
+    <script>
+        let box2 = document.getElementsByClassName("box2")[0];
+        let box2_content = document.getElementsByClassName("content-wrapper")[0];
+
+
+        window.onscroll = () => {
+            let scrollTop = window.scrollY;
+            let viewportHeight = window.innerHeight;
+            let contentHeight = box2_content.getBoundingClientRect().height;
+            let box2Top = box2.getBoundingClientRect().top + window.pageYOffset;
+            if (scrollTop >= contentHeight - viewportHeight + box2Top) {
+                box2_content.style.transform = `translateY(-${contentHeight - viewportHeight + box2Top}px)`;
+                box2_content.style.position = "fixed";
+            }
+            else {
+                box2_content.style.transform = "";
+                box2_content.style.position = "";
+            }
+        }
+    </script>
+</body>
+
+</html>

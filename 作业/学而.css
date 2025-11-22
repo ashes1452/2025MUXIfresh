@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
 }
 
 body {
@@ -147,8 +150,9 @@ body {
     border-radius: 50%;
     clip-path: circle(50%);
     background-color: white;
-    position: relative;
     transition: 0.3s ease;
+    line-height: 75px;
+    text-align: center;
 }
 
 
@@ -161,8 +165,9 @@ body {
     border-radius: 50%;
     clip-path: circle(50%);
     background-color: white;
-    position: relative;
     transition: 0.3s ease;
+    line-height: 75px;
+    text-align: center;
 }
 
 .cg1-3 {
@@ -172,8 +177,9 @@ body {
     border-radius: 50%;
     clip-path: circle(50%);
     background-color: white;
-    position: relative;
     transition: 0.3s ease;
+    line-height: 75px;
+    text-align: center;
 }
 
 .cg1-4 {
@@ -183,8 +189,9 @@ body {
     border-radius: 50%;
     clip-path: circle(50%);
     background-color: white;
-    position: relative;
     transition: 0.3s ease;
+    line-height: 75px;
+    text-align: center;
 }
 
 .cg1-1:hover {
@@ -224,33 +231,21 @@ body {
 }
 
 .cg1-1-1 {
-    position: relative;
-    top: 30%;
-    left: 30%;
     font-size: 30px;
     color: rgb(7, 150, 81);
 }
 
 .cg1-1-2 {
-    position: relative;
-    top: 30%;
-    left: 30%;
     font-size: 30px;
     color: rgb(7, 150, 81);
 }
 
 .cg1-1-3 {
-    position: relative;
-    top: 30%;
-    left: 30%;
     font-size: 30px;
     color: rgb(7, 150, 81);
 }
 
 .cg1-1-4 {
-    position: relative;
-    top: 30%;
-    left: 30%;
     font-size: 30px;
     color: rgb(7, 150, 81);
 }
@@ -258,29 +253,35 @@ body {
 .cg2 {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    gap: 38px;
+    justify-content: space-between;
     padding-top: 10px;
 }
 
+
 .cg2-1 {
+    width: 200px;
     padding-top: 20px;
     line-height: 12px;
+    background-color: aqua;
 }
+
 
 .cg2-2 {
     line-height: 12px;
     padding-top: 20px;
+    background-color: red;
 }
 
 .cg2-3 {
     line-height: 12px;
     padding-top: 20px;
+    background-color: yellow;
 }
 
 .cg2-4 {
     line-height: 12px;
     padding-top: 20px;
+    background-color: green;
 }
 
 .specialwriting {
